@@ -4,7 +4,7 @@ animate glyphs with javascript and render them on an svg canvas
 
 The skeleton of an svgglyphanimate script is:
 1. Define the `text` object and ask opentype.js to read it
-2. Define the `animateSVG(text)` function, and
+2. Define the `animateSVG(text)` function with a `for` loop, and
 3. End the `animateSVG(text)` function with the `renderText(text)` function and a `requestAnimationFrame(() => animateSVG(text))`
 
 Here's an example:
@@ -37,3 +37,5 @@ function animateSVG(text) {
     requestAnimationFrame(() => animateSVG(text))
 }
 ```
+
+`opentypeLoad(text)` defines an array of points, `text.points` in an SVG-path-like object. Each `item` in the
