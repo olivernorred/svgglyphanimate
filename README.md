@@ -7,6 +7,21 @@ The skeleton of an svgglyphanimate script is:
 2. Define the `animateSVG(text)` function with a `for` loop, and
 3. End the `animateSVG(text)` function with the `renderText(text)` function and a `requestAnimationFrame(() => animateSVG(text))`
 
+In your HTML, create an SVG element and define the viewbox, then fetch the scripts, as follows:
+```
+<svg
+    id="svgglyphanimate"
+    version="1.1"
+    baseProfile="full"
+    viewbox="0 -100 1000 1000"
+    xmlns="http://www.w3.org/2000/svg"
+></svg>
+<script src="https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js"></script>
+<script src="svgglyphanimate.js"></script>
+<script src="yourscript.js"></script>
+```
+
+
 Here's an example:
 
 ```
