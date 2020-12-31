@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>svg text animator</title>
+        <style>
+            body {
+                margin: 0;
+                height: 100vh;
+                display: grid;
+                place-items: center;
+                background: teal;
+            }
+
+            canvas,
+            svg {
+                border: 1px dashed rgba(0, 0, 0, 0.1);
+            }
+        </style>
+    </head>
+
+    <body>
+        <svg
+            id="svgglyphanimate"
+            version="1.1"
+            baseProfile="full"
+            xmlns="http://www.w3.org/2000/svg"
+            viewbox="0 -100 1000 1000"
+        ></svg>
+
+        <script src="https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js"></script>
+        <script src="svgglyphanimate.js"></script>
+        <script src="example1.js"></script>
+    </body>
+</html>
