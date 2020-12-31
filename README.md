@@ -13,8 +13,8 @@ In your HTML, create an SVG element and define the viewbox, then fetch the scrip
     id="svgglyphanimate"
     version="1.1"
     baseProfile="full"
-    viewbox="0 -100 1000 1000"
     xmlns="http://www.w3.org/2000/svg"
+    viewbox="0 -100 1000 1000"
 ></svg>
 <script src="https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js"></script>
 <script src="svgglyphanimate.js"></script>
@@ -22,8 +22,7 @@ In your HTML, create an SVG element and define the viewbox, then fetch the scrip
 ```
 
 
-Here's an example:
-
+Here's an example script:
 ```
 const text = {
     fontfile:"fonts/Taters0.2-Baked.otf",
