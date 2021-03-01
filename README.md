@@ -1,5 +1,5 @@
 # svgglyphanimate
-animate glyphs with javascript and render them on an svg canvas
+animate glyphs with javascript and render them in an svg viewbox
 
 
 The skeleton of an svgglyphanimate script is:
